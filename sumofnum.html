@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Sum of Numbers</title>
+    </head>
+    <script>
+        function submit() {
+            let n = parseInt(prompt("Enter the number of terms to sum:"));
+            let sum = 0;
+            for (let i = 1; i <= n; i++) {
+                let num = parseInt(prompt("Enter number " + i + ":"));
+                sum += num;
+            }
+            alert("The sum of the numbers is: " + sum);
+        }
+    </script>
+    <body>
+        <input type="button" value="Submit" onclick="submit()"><br>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Sample-1</title>
+</head>
+<body>
+    <script>
+        function add(){
+            a = parseInt(document.getElementById("n1").value);
+            b = parseInt(document.getElementById("n2").value);
+            c = a + b;
+            document.getElementById("res").value = c;
+        }
+
+        function sub(){
+            a = parseInt(document.getElementById("n1").value);
+            b = parseInt(document.getElementById("n2").value);
+            c = a - b;
+            document.getElementById("res").value = c;
+        }
+
+        function mul(){
+            a = parseInt(document.getElementById("n1").value);
+            b = parseInt(document.getElementById("n2").value);
+            c = a * b;
+            document.getElementById("res").value = c;
+        }
+
+        function div(){
+            a = parseInt(document.getElementById("n1").value);
+            b = parseInt(document.getElementById("n2").value);
+            if (b !== 0) {
+                c = a / b;
+                document.getElementById("res").value = c;
+            } else {
+                document.getElementById("res").value = "Error: Div by 0";
+            }
+        }
+
+        function compare(){
+            a = parseInt(document.getElementById("n1").value);
+            b = parseInt(document.getElementById("n2").value);
+            if (a > b) {
+                document.getElementById("res").value = a + " is greater than " + b;
+            } else if (a < b) {
+                document.getElementById("res").value = a + " is less than " + b;
+            } else {
+                document.getElementById("res").value = a + " is equal to " + b;
+            }
+        }
+
+        function checkEvenOdd(){
+            a = parseInt(document.getElementById("n1").value);
+            b = parseInt(document.getElementById("n2").value);
+            let result = "";
+            if (a % 2 === 0) {
+                result += a + " is even. ";
+            } else {
+                result += a + " is odd. ";
+            }
+            if (b % 2 === 0) {
+                result += b + " is even.";
+            } else {
+                result += b + " is odd.";
+            }
+            document.getElementById("res").value = result;
+        }
+    </script>
+    
+    Enter a number: <input type="text" id="n1"><br>
+    Enter a number: <input type="text" id="n2"><br>    
+    <input type="button" value="Add" onclick="add()"><br>
+    <input type="button" value="Sub" onclick="sub()"><br>
+    <input type="button" value="Mul" onclick="mul()"><br>
+    <input type="button" value="Div" onclick="div()"><br>
+    <input type="button" value="Compare" onclick="compare()"><br>
+    <input type="button" value="Check Even/Odd" onclick="checkEvenOdd()"><br>
+    Result: <input type="text" id="res" disabled><br>
+</body>
+</html>

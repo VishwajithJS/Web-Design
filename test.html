@@ -1,0 +1,90 @@
+<html></html>
+    <head>
+        <h1>Day-4</h1>
+        <title>TABLE formatting</title>
+    </head>
+    <style rel="stylesheet">
+        body{
+            background-color: antiquewhite;
+        }
+        table,th,td{
+            border:solid 2px black;
+        }
+        #d1{
+            color:black;
+            background-color: darkturquoise;
+        }
+    </style>
+    <body>
+        <centre><h1>Time Table</h1></centre>
+        <table>
+            <div class="details">
+                <tr>
+                    <th>Day/Hour</th>
+                    <th>I</th>
+                    <th>II</th>
+                    <th rowspan="6">Break</th>
+                    <th>III</th>
+                    <th>IV</th>
+                    <th rowspan="6">Lunch</th>
+                    <th>V</th>
+                    <th>VI</th>
+                    <th>VII</th>
+                    </tr>
+            </div>
+            <div id="mon">
+                <tr>
+                    <td>Monday</td>
+                    <td colspan="2"id="d1">DAA</td>
+                    <td colspan="2"id="d1">PCP</td>
+                    <td colspan="2"id="d1">Python Lab</td>
+                    <td>Mathematics</td>
+                </tr>
+            </div>
+            <div id="tue">
+                <tr>
+                    <td>Tuesday</td>
+                    <td>FA&P</td>
+                    <td>Signals and Systems</td>
+                    <td>Computer system </td>
+                    <td>PCP</td>
+                    <td>Mathematics</td>
+                    <td>Microprocessor</td>
+                    <td>Seminar/Mentor Mentee Meeting</td>
+                </tr>
+            </div>
+            <div id="wed">
+                <tr>
+                    <td>Wednesday</td>
+                    <td >Mathematics</td>
+                    <td>Computer systems</td>
+                    <td colspan="2" id="d1">PCD</td>
+                    <td>FA&P</td>
+                    <td>System and Signals</td>
+                    <td>Club Activity</td>
+                </tr>
+            </div>
+            <div id="thur">
+                <tr>
+                    <td>Thursday</td>
+                    <td colspan="2"id="d1">DAA Lab</td>
+                    <td>Mathematics</td>
+                    <td>Microprocessor</td>
+                    <td>DAA</td>
+                    <td colspan="2" id="d1">Microprocessor Lab</td>
+                </tr>
+            </div>
+            <div id="fri">
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Signals and Systems</td>
+                    <td>Computer system </td>
+                    <td>Microprocessor</td>
+                    <td>PCP</td>
+                    <td>FA&P</td>
+                    <td>Mathematics</td>
+                    <td colspan="2" id="d1">Web development Lab</td>
+                </tr>
+            </div>            
+        </table>
+</html>
